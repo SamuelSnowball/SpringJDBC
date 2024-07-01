@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/traveljournal
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: example
+    hikari:
+      idle-timeout: 10000
+      maximumPoolSize: 1
